@@ -1,0 +1,174 @@
+/* project: internet music template
+   author: luka cvrk (www.solucija.com) */
+
+   
+/* default styles
+   -------------- */
+html {
+	height: 100%;
+}
+body { 
+	padding: 0; 
+	margin: 0; 
+	/*font: 0.84em Arial, Helvetica, sans-serif; 
+	line-height: 1.5em;*/
+	background: #fff; 
+	color: #454545; 
+	height: 100%;
+}
+
+a {
+	color: #4A8EBC; 
+	background: inherit;
+}
+
+a:hover {
+	color: #C3593C;
+	background: inherit;	
+}
+
+a.title {
+	color: #FE6700;
+	background: #FFF;
+}
+
+h1 {
+	font: bold 2em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing: -1px; 
+	padding: 2px 0 0 0px;
+	margin: 0;
+	color: #464548;
+	background: inherit;
+}
+
+h1 a, h2 a {
+	text-decoration: none;
+	color: #464548;
+	background: inherit;
+}
+
+h1 a:hover, h2 a:hover {
+	color: #C3593C;
+	background: #FFF;
+}
+
+h1 .red{
+	color: #C3593C;
+	background: inherit;
+}
+
+
+h2 { 
+	margin: 0 0 5px 0; 
+	padding: 0; 
+	font: bold 1.5em Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #000; 
+	background: inherit;
+}
+
+h2 .yellow{
+	color: #FFFCD1;
+	background: inherit;
+}
+
+p {	margin: 0 0 5px 0; }
+
+ul { 
+	margin: 0; 
+	padding : 0; 
+	list-style : none; 
+}
+
+/* layout
+   ------ */
+
+#content { 
+	margin: 10px auto;
+	position:relative;
+	width: 96%;
+	min-height: 100%;
+	height: 100%;
+	voice-family: "\"}\"";
+    voice-family: inherit;
+    height: auto;
+}
+
+html>body #content {
+    height: auto;
+}
+
+#logo {
+	float: left;
+	width: 180px;
+	padding: 2px 0 0px 2px;
+}
+
+#header_right {
+	float: right;
+	width: 30%;
+	/*height: 72px;*/
+}
+
+#logo p {
+	font-size: 0.9em;
+	color: #808080;
+	padding: 0 0 0 7px;
+	background: inherit;
+}
+
+/* left side
+   --------- */
+
+#left {
+	float: left;
+	width: 16%;
+	margin: 0 0 10px 0;
+}
+	
+/* right side
+   ---------- */
+		
+#right {
+	float: right;
+	width: 75%;
+	margin: 0 0 10px 0;
+}
+
+/* footer
+   ------ */
+
+#footer { 
+	clear: both; 
+	text-align: center;
+	line-height: 1.8em;
+	color: #808080;
+	/*background: #FFF url(dot.gif) repeat-x;*/
+	padding: 1px 0;
+	position: absolute;
+	/* bottom: 0; */
+	width: 100%;
+}
+
+#footer a {
+	color: #C3593C;
+	background: inherit;
+}
+#footer p {
+	text-align: center;
+}
+.section {
+	margin-top: 5px;
+}
+.section h1 {
+	background: #E2E2E2 none repeat scroll 0%;
+	padding: 3px 0 3px 8px;
+	font-size: 1.2em;
+}
+.section .section-content {
+	background-color: #f0f8ff; 
+	padding: 5px;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}

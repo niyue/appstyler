@@ -1,0 +1,22 @@
+<div id="header">
+	<div id="logo">
+	  <h1>Appstyler</h1>
+	</div>
+	<ul class="menu adxm">
+	    <li>
+        <%= link_to 'Homepage', '#' %>
+	    </li>
+	    <li>
+        <%= link_to 'Rails', 'http://www.rubyonrails.org' %>
+			  <ul>
+          <li>
+            <%= link_to 'Rails Guides', 'http://guides.rubyonrails.org/' %>
+          </li>
+          <li>
+            <%= link_to 'Download', 'http://rubyonrails.org/download' %>
+          </li>
+	      </ul>
+	    </li>
+	</ul>
+</div>
+<%= render :partial => 'layouts/notification' %>

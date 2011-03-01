@@ -1,0 +1,17 @@
+.uniForm {
+  background: #efefef;
+  font-family: "Lucida Sans Unicode","Lucida Grande",Arial,Verdana,sans-serif;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35);
+}
+.uniForm .ctrlHolder ol li label {
+  font-size: 0.85em;
+}
+form.formtastic ol, form.formtastic ul { list-style:none; }
+
+.disclaimer {
+  background: none repeat scroll 0 0 #DBE7F1;
+  border-bottom: 1px solid #C4D2DB;
+  margin: 0px 0px 0px;
+  padding: 28px;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+<%= load_table('dependencies_table') %>
+
+<dl class="kv">
+  <dt>Ruby version:</dt>
+  <dd><%= @ruby_version %></dd>
+  <dt>Rubygems version:</dt>
+  <dd><%= @rubygems_version %></dd>
+  <dt>Rails version:</dt>
+  <dd><%= @rails_version %></dd>
+  <dt>Application root:</dt>
+  <dd><%= @app_root %></dd>
+  <dt>Database schema version:</dt>
+  <dd><%= @db_schema_version %></dd>
+</dl>
+
+<table id="dependencies_table" class="display">
+  <thead>
+    <tr>
+      <th>RubyGem Name</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for dependency in @dependencies %>
+      <tr>
+        <td><%= dependency[0] %></td>
+        <td><%= dependency[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
