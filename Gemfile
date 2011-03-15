@@ -5,7 +5,9 @@ source "http://rubygems.org"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
+gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "formtastic", "1.2.3"
+
 
 group :development do
   gem "shoulda", ">= 0"

@@ -69,7 +69,7 @@ module Appstyler
     end
 
     def text_input?(input_type)
-      not [:select, :radio, :check_boxes].include?(input_type)
+      not [:select, :radio, :check_boxes, :boolean].include?(input_type)
     end
   end
 end

@@ -5,7 +5,7 @@
     padding:5px 20px 5px 45px;
     text-align:left;
 }
-.warning {
+.alert {
 	background: #fff6bf url(../images/exclamation.png) no-repeat scroll 15px 50%;
 	background-position: 15px 50%; /* x-pos y-pos */
 	text-align: left;
