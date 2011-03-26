@@ -1,4 +1,4 @@
-Appstyler::Engine.routes.draw do
+Rails.application.routes.draw do
   resources :system_info, :only => [:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.

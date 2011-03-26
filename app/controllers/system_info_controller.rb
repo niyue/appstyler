@@ -1,4 +1,5 @@
 class SystemInfoController < ApplicationController
+  unloadable
   def index
     @ruby_version = "#{RUBY_VERSION} (#{RUBY_PLATFORM})"
     @rubygems_version = Gem::RubyGemsVersion
