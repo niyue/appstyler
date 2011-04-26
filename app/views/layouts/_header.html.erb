@@ -7,6 +7,12 @@
         <%= link_to 'Homepage', '#' %>
 	    </li>
 	    <li>
+	    	<% if(user_signed_in?) %>
+				<%= link_to '登出', destroy_user_session %>
+			<% else %>
+				<%= link_to '登录', new_user_session %>
+			<% end %>
+	    </li>
 	</ul>
 </div>
 <%= render :partial => 'layouts/notification' %>

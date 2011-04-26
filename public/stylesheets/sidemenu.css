@@ -1,0 +1,46 @@
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+.sidemenu {
+    width: 190px; /*width of menu*/
+}
+
+.sidemenu .headerbar {
+    font: bold 13px Verdana;
+    color: white;
+    background: #606060 no-repeat 8px 6px; /*last 2 values are the x and y coordinates of bullet image*/
+    margin-bottom: 0; /*bottom spacing between header and rest of content*/
+    text-transform: uppercase;
+    padding: 7px 0 7px 31px; /*31px is left indentation of header text*/
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+
+.sidemenu ul li {
+    padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.sidemenu ul li a {
+    font: normal 12px Arial;
+    color: black;
+    background: #E9E9E9;
+    display: block;
+    padding: 5px 0;
+    line-height: 17px;
+    padding-left: 8px; /*link text is indented 8px*/
+    text-decoration: none;
+}
+
+.sidemenu ul li a:visited {
+    color: black;
+}
+
+.sidemenu ul li a:hover { /*hover state CSS*/
+    color: white;
+    background: black;
+}

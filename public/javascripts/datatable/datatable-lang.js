@@ -7,7 +7,7 @@ function load_table(table_id) {
 			"bPaginate": false,
 			"sDom": '<"fg-toolbar ui-widget-header ui-corner-tl ui-corner-tr ui-helper-clearfix"lfr>t',
 			"oLanguage": {
-				"sUrl": "javascripts/datatable/zh-cn.txt"
+				"sUrl": "/javascripts/datatable/zh-cn.txt"
 			}
 		});
 	});
