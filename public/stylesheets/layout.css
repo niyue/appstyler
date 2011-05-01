@@ -131,7 +131,7 @@ html>body #content {
 		
 #right {
 	float: right;
-	width: 75%;
+	width: 80%;
 	margin: 0 0 10px 0;
 }
 
@@ -145,7 +145,7 @@ html>body #content {
 	color: #808080;
 	/*background: #FFF url(dot.gif) repeat-x;*/
 	padding: 1px 0;
-	position: absolute;
+	/*position: absolute;*/
 	/* bottom: 0; */
 	width: 100%;
 }

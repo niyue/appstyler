@@ -18,6 +18,8 @@
     font-size: 1.2em;
 }
 
+.uniForm .ctrlHolder{ padding: 0.6em; }
+
 form.formtastic ol, form.formtastic ul {
     list-style: none;
 }
@@ -29,3 +31,21 @@ form.formtastic ol, form.formtastic ul {
     padding: 28px;
     text-align: center;
 }
+
+form.formtastic fieldset > ol > li.string input, 
+form.formtastic fieldset > ol > li.password input, 
+form.formtastic fieldset > ol > li.numeric input,
+form.formtastic fieldset > ol > li.email input,
+form.formtastic fieldset > ol > li.url input,
+form.formtastic fieldset > ol > li.phone input,
+form.formtastic fieldset > ol > li.search input { width:53%;}
+
+form.formtastic fieldset > ol > li.string input[size], 
+form.formtastic fieldset > ol > li.password input[size], 
+form.formtastic fieldset > ol > li.numeric input[size],
+form.formtastic fieldset > ol > li.email input[size],
+form.formtastic fieldset > ol > li.url input[size],
+form.formtastic fieldset > ol > li.phone input[size],
+form.formtastic fieldset > ol > li.search input[size] { width:auto; max-width:53%; }
+
+form.formtastic fieldset > ol > li p.inline-errors { color:#cc0000; margin:0.5em 0 0 25%; font-size: 0.7em; display: block;}
