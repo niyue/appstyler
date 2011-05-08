@@ -15,7 +15,8 @@
 
 .uniForm fieldset legend {
     padding: 0.2em 0.5em;
-    font-size: 1.2em;
+    font-size: 1em;
+	font-weight: normal;
 }
 
 .uniForm .ctrlHolder{ padding: 0.6em; }
@@ -31,6 +32,8 @@ form.formtastic ol, form.formtastic ul {
     padding: 28px;
     text-align: center;
 }
+
+form.formtastic legend { white-space:nowrap; color:#000; }
 
 form.formtastic fieldset > ol > li.string input, 
 form.formtastic fieldset > ol > li.password input, 
