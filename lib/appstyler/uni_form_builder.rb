@@ -44,7 +44,10 @@ module Appstyler
       html_id = generate_html_id(method, "")
       "<script type='text/javascript'>
         jQuery('##{html_id}').#{picker_type}({
-          dateFormat: 'yy-mm-dd'
+          dateFormat: 'yy-mm-dd',
+          changeYear: true,
+          yearRange: '-60:+10',
+          defaultDate: 0
       });</script>".html_safe
     end
     
