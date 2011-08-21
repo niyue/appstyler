@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appstyler}
-  s.version = ""
+  s.version = "0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["niyue"]
-  s.date = %q{2011-02-06}
-  s.description = %q{TODO: longer description of your gem}
+  s.authors = [%q{niyue}]
+  s.date = %q{2011-08-21}
+  s.description = %q{Application styling skeleton}
   s.email = %q{niyue.com@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -18,19 +18,83 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".project",
     "Gemfile",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "app/controllers/system_info_controller.rb",
+    "app/helpers/application_helper.rb",
+    "app/views/layouts/_footer.html.erb",
+    "app/views/layouts/_header.html.erb",
+    "app/views/layouts/_include.html.erb",
+    "app/views/layouts/_notification.html.erb",
+    "app/views/layouts/application.html.erb",
+    "app/views/shared/_upload.html.erb",
+    "app/views/system_info/index.html.erb",
+    "appstyler.gemspec",
+    "config/initializers/formtastic.rb",
+    "config/routes.rb",
     "lib/appstyler.rb",
+    "lib/appstyler/engine.rb",
+    "lib/appstyler/uni_form_builder.rb",
+    "public/images/upload_button.png",
+    "public/javascripts/adxmenu.js",
+    "public/javascripts/datatable/dataTables.js",
+    "public/javascripts/datatable/datatable-lang.js",
+    "public/javascripts/datatable/zh-cn.txt",
+    "public/javascripts/datetimepicker/jquery-ui-datepicker-zh-CN.js",
+    "public/javascripts/datetimepicker/jquery-ui-timepicker-addon.js",
+    "public/javascripts/jquery-ui.js",
+    "public/javascripts/jquery.js",
+    "public/javascripts/niftycube.js",
+    "public/jwplayer/jwplayer.js",
+    "public/jwplayer/player.swf",
+    "public/jwplayer/yt.swf",
+    "public/openflashchart/open-flash-chart.swf",
+    "public/star-rating/delete.gif",
+    "public/star-rating/jquery-rating.css",
+    "public/star-rating/jquery-rating.js",
+    "public/star-rating/star.gif",
+    "public/stylesheets/form/default-uni-form.css",
+    "public/stylesheets/form/formtastic.css",
+    "public/stylesheets/form/uni-form-changes.css",
+    "public/stylesheets/form/uni-form.css",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_flat_75_ffffff_40x100.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_glass_65_ffffff_1x400.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_glass_75_dadada_1x400.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-icons_222222_256x240.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-icons_2e83ff_256x240.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-icons_454545_256x240.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-icons_888888_256x240.png",
+    "public/stylesheets/jquery-ui/smoothness/images/ui-icons_cd0a0a_256x240.png",
+    "public/stylesheets/jquery-ui/smoothness/jquery-ui.css",
+    "public/stylesheets/jquery-ui/smoothness/table-jui.css",
+    "public/stylesheets/jquery-ui/smoothness/timepicker.css",
+    "public/stylesheets/layout.css",
+    "public/stylesheets/menu/empty.gif",
+    "public/stylesheets/menu/menu.css",
+    "public/stylesheets/misc.css",
+    "public/stylesheets/niftycorners.css",
+    "public/stylesheets/sidemenu.css",
+    "public/uploadify3/cancel.png",
+    "public/uploadify3/jquery.uploadify.js",
+    "public/uploadify3/uploadify.css",
+    "public/uploadify3/uploadify.js",
+    "public/uploadify3/uploadify.swf",
     "test/helper.rb",
     "test/test_appstyler.rb"
   ]
   s.homepage = %q{http://github.com/nybon/appstyler}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
+  s.summary = %q{An gem as application styling skeleton}
   s.test_files = [
     "test/helper.rb",
     "test/test_appstyler.rb"
@@ -40,17 +104,23 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rails>, ["= 3.0.5"])
+      s.add_runtime_dependency(%q<formtastic>, ["= 1.2.3"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
+      s.add_dependency(%q<rails>, ["= 3.0.5"])
+      s.add_dependency(%q<formtastic>, ["= 1.2.3"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
+    s.add_dependency(%q<rails>, ["= 3.0.5"])
+    s.add_dependency(%q<formtastic>, ["= 1.2.3"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
