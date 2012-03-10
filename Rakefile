@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{An gem as application styling skeleton}
   gem.description = %Q{Application styling skeleton}
-  gem.email = "niyue.com@gmail.com"
+  gem.email = "example@example.com"
   gem.authors = ["niyue"]
   gem.version = 0.1
   # Include your dependencies below. Runtime dependencies are required when using your gem,
