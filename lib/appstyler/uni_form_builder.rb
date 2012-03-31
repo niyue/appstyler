@@ -46,7 +46,7 @@ module Appstyler
         jQuery('##{html_id}').#{picker_type}({
           dateFormat: 'yy-mm-dd',
           changeYear: true,
-          yearRange: '-60:+10',
+          yearRange: '-90:+10',
           defaultDate: 0
       });</script>".html_safe
     end
